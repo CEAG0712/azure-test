@@ -51,7 +51,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
 
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/pages", to: "pages" }],
+      patterns: [{ from: "src/pages", to: "pages" }, { from: "staticwebapp.config.json" }],
     }),
   ],
 };
